@@ -31,7 +31,8 @@ def mediana(datos):
                raise TypeError("Datos no numéricos ")
          
          valores_validos.append(x)
-  
+    if len(valores_validos) == 0:
+        raise ValueError("No hay valores válidos")
     valores_validos.sort()
     n = len(valores_validos)
     mitad = n // 2
