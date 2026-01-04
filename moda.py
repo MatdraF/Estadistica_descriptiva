@@ -1,7 +1,5 @@
 import math
 
-import math
-
 def moda(datos):
     """
     Calcula la moda de una lista de valores.
@@ -18,6 +16,7 @@ def moda(datos):
     -------
     list
         Lista con el o los valores modales.
+        Retorna una lista vacía si no existe moda.
 
     Lanza
     -----
@@ -26,7 +25,6 @@ def moda(datos):
     ValueError
         Si no existen valores válidos para calcular la moda.
     """
-
     valores_validos = []
 
     for x in datos:
@@ -54,13 +52,12 @@ def moda(datos):
         if freq > max_frecuencia:
             max_frecuencia = freq
 
+    if max_frecuencia == 1:
+        return []
+
     modas = []
     for x in frecuencias:
         if frecuencias[x] == max_frecuencia:
             modas.append(x)
-    if modas == valores_validos:
-        return print("No hay moda")
-    else:
-        
+
     return modas
-print(moda([2,3,4,5]))
