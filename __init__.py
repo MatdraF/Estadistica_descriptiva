@@ -8,3 +8,5 @@ from .varianza import varianza
 from .desviacion_estandar import desviacion_estandar
 from .desviacion_mediana_absoluta import desviacion_mediana_absoluta
 from .covarianza import covarianza
+
+
