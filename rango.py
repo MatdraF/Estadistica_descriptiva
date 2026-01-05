@@ -47,3 +47,4 @@ def rango(datos):
             maximo = x
 
     return maximo - minimo
+

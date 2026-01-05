@@ -42,3 +42,4 @@ def desviacion_mediana_absoluta(datos):
         desviaciones.append(abs(x - med))
 
     return mediana(desviaciones)
+
