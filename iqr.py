@@ -1,4 +1,5 @@
-import percentil
+from .percentil import percentil
+
 def rango_intercuartilico(datos):
     """
     Calcula el rango intercuartílico (IQR) de una lista de valores numéricos,
@@ -23,3 +24,4 @@ def rango_intercuartilico(datos):
     Las excepciones son propagadas desde la función percentil.
     """
     return percentil(datos, 75) - percentil(datos, 25)
+

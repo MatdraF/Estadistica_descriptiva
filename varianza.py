@@ -1,5 +1,6 @@
 import math
-import promedio
+from .promedio import promedio
+
 
 def varianza(datos):
     """

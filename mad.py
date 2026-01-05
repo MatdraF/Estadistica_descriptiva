@@ -1,5 +1,5 @@
 import math
-import mediana
+from .mediana import mediana
 def desviacion_mediana_absoluta(datos):
     """
     Calcula la desviación mediana absoluta (MAD) de una lista de valores
