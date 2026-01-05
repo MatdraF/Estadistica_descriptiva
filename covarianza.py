@@ -1,5 +1,5 @@
 import math
-
+import varianza
 def desviacion_estandar(datos):
     """
     Calcula la desviación estándar poblacional de una lista de valores
