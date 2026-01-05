@@ -25,3 +25,4 @@ def desviacion_estandar(datos):
     """
     
     return math.sqrt(varianza(datos))
+
