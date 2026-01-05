@@ -1,4 +1,5 @@
 import math
+import promedio
 
 def varianza(datos):
     """
@@ -25,6 +26,7 @@ def varianza(datos):
     ValueError
         Si no existen valores suficientes para realizar el cálculo.
     """
+    
     valores_validos = []
 
     for x in datos:
@@ -44,3 +46,4 @@ def varianza(datos):
         suma += (x - media) ** 2
 
     return suma / len(valores_validos)
+
